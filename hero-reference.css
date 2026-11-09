@@ -1,0 +1,16 @@
+/* Main-page width, hero outline and source photograph locked to Crop’s.
+   Existing animation declarations and the Blizhnyaya Dacha artwork stay intact. */
+body:not(.inner) .container{width:87.5vw;max-width:none}
+body:not(.inner) .hero{height:clamp(540px,calc(22.75vw + 331.7px),1000px);min-height:0;align-items:flex-start;clip-path:polygon(0 0,100% 0,100% 88.635%,73.044% 100%,0 88.635%)}
+body:not(.inner) .hero-photo{object-position:52.07% 48.53%;opacity:1}
+body:not(.inner) .hero::after{background:rgba(0,0,0,.2)}
+body:not(.inner) .hero-copy{padding-top:calc(6.5vw + 90px);padding-bottom:0}
+body:not(.inner) .hero .btn{font-size:16px;line-height:26px;min-height:62px;padding:18px 25px;max-width:100%;white-space:normal}
+@media(max-width:767px){
+ body:not(.inner) .hero{height:calc(6.5vw + 469px);min-height:0;clip-path:polygon(0 88.635%,0 0,100% 0,100% 93.635%,73.044% 100%,0 91.635%)}
+ body:not(.inner) .hero-copy{padding-top:calc(6.5vw + 90px);padding-bottom:0}
+ body:not(.inner) .hero .btn{gap:18px}
+ body:not(.inner) .hero h1{overflow-wrap:anywhere}
+}
+body:not(.inner) .hero-copy{margin:0 auto}
+@media(max-width:359px){body:not(.inner) .hero{height:520px}}

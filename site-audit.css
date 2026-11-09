@@ -1,0 +1,104 @@
+/* Site-wide visual audit. Motion rules and the brand-art layers are intentionally
+   left in their existing files, without overriding their transforms or animation. */
+body{font-family:Poppins,Montserrat,Arial,sans-serif}
+.btn{font-family:Poppins,Montserrat,Arial,sans-serif;font-size:14px;font-weight:700;line-height:26px;letter-spacing:.875px;min-height:62px;padding:18px 25px;border-radius:0;box-shadow:none}
+.btn.outline{border-width:2px;padding:16px 23px}
+.text-link{font-family:Poppins,Montserrat,Arial,sans-serif;font-size:14px;font-weight:600;letter-spacing:.875px;line-height:26px}
+.inner main h1{font-family:Recoleta,Lora,Georgia,serif;font-size:clamp(35px,calc(5.4vw - 6.46px),80px);font-weight:700;line-height:1.21;letter-spacing:-.025em;text-wrap:initial}
+.inner main h2,.inner main h3{font-family:Poppins,Montserrat,Arial,sans-serif;font-weight:500;letter-spacing:0;text-wrap:initial}
+.inner main h2{font-size:clamp(24px,calc(.96vw + 16.62px),32px);line-height:1.15}
+.inner main h3{font-size:clamp(20px,calc(.12vw + 19.11px),21px);line-height:1.2}
+.inner main .section{padding-top:0!important;padding-bottom:0!important;margin-top:max(5.25vw,40px)}
+.inner main>.cr-heading~.section:first-of-type{margin-top:max(5.25vw,40px)}
+.inner main p{font-size:16px;line-height:26px}
+.inner .editorial-split{gap:max(5.25vw,40px);align-items:stretch}
+.inner .editorial-text{align-self:center}.inner .editorial-text h2{margin-bottom:24px}
+.inner .editorial-text p{font-size:16px;line-height:26px;margin-bottom:24px}
+.inner .editorial-image{position:relative;min-height:440px;height:auto;align-self:stretch}
+.inner .editorial-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.inner .editorial-image:has(img[src*="packages/"]){background:#fff}
+.inner .editorial-image img[src*="packages/"]{object-fit:contain;padding:30px}
+.cr-visual:has(img[src*="packages/"]){background:#fff;min-height:420px}
+.cr-visual img[src*="packages/"]{object-fit:contain;padding:30px}
+.cr-cta-visual img[src*="packages/"]{object-fit:contain;padding:24px;background:#fff}
+.inner .metric-strip{padding:40px 0 20px;margin-top:max(5.25vw,40px);border:0;gap:max(2.625vw,20px)}
+.inner .metric-strip strong{font-family:Poppins,Montserrat,Arial,sans-serif;font-weight:500;font-size:clamp(30px,3.5vw,50px)}
+.inner .metric-strip span{font-size:14px;line-height:24px}
+.inner .region-layout{gap:max(5.25vw,40px)}
+.inner .region-map{padding:30px}
+.inner .region-tabs button,.inner .feature-tabs button{font-family:Poppins,Montserrat,Arial,sans-serif;border-radius:0;font-weight:500}
+.inner .category-hero{height:440px}.inner .category-hero h1{font-size:clamp(35px,calc(5.4vw - 6.46px),80px)}
+.inner .long-intro p{font-size:16px;line-height:26px}
+.inner .category-grid{gap:max(5.25vw,40px)}
+.inner .category-tile{border:0;padding:0}
+.inner .category-tile .package-photo{height:auto;aspect-ratio:2/1;object-fit:contain;padding:20px;margin-bottom:25px}
+.inner .category-tile h3{margin-bottom:18px}
+.inner .quality-grid{grid-template-columns:repeat(3,1fr);gap:max(5.25vw,40px);margin-top:0}
+.inner .quality-grid img{height:auto;aspect-ratio:2/1;object-fit:cover;margin-bottom:22px}
+.inner .quality-grid p{font-size:16px;line-height:26px}
+.audit-subheading{margin-top:32px!important}
+.audit-reference-page>.cr-tint+.cr-tint{margin-top:0;padding-top:0}
+.audit-wide-quality{display:grid;grid-template-columns:1fr 1fr;background:#e8efe1}
+.audit-wide-copy{padding:6.25vw}.audit-wide-copy h2{margin:0 0 24px}.audit-wide-copy p{margin:0 0 24px}
+.audit-wide-photo{position:relative;min-height:480px;overflow:hidden}
+.audit-wide-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.audit-gallery{display:grid;grid-auto-flow:column;grid-auto-columns:31.333%;gap:3%;overflow:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;padding-bottom:10px}
+.audit-gallery figure{margin:0;scroll-snap-align:start;aspect-ratio:3/4;overflow:hidden}
+.audit-gallery img{width:100%;height:100%;object-fit:cover}
+.inner .feature-tabs{margin-bottom:40px}.inner .feature-panel{gap:max(5.25vw,40px)}
+.inner .feature-panel img{height:auto;aspect-ratio:4/3;object-fit:cover}
+.inner .feature-panel p{font-size:16px;line-height:26px}
+.inner .listing-section .catalog-toolbar{margin-bottom:30px;font-size:14px}
+.inner .catalog-layout{gap:max(2.625vw,20px)}
+.inner .catalog-grid .product-image{aspect-ratio:8/9}
+.inner .product-card h3{min-height:2.4em}
+.inner .product-card .text-link{font-size:12px;line-height:24px}
+.inner .catalog-note{font-size:12px;line-height:22px}
+.inner .product-detail>.product-image{aspect-ratio:8/9}
+.inner .product-detail .catalog-note{font-size:12px;line-height:22px}
+.inner .recipes-list .recipe-photo,.inner .recipe-preview .recipe-photo{aspect-ratio:6/5}
+.inner .recipe-copy{padding:25px}
+.inner .recipe-copy h3{min-height:2.4em}
+.inner .recipe-copy p{font-size:13px;line-height:22px}
+.inner .recipe-tags span{font-size:10px;font-weight:500}
+.inner .recipe-heading{padding:0;margin-top:calc(6.5vw - 1px)}
+.inner .recipe-heading h1{max-width:1100px}
+.inner .recipe-detail-layout{gap:max(5.25vw,40px)}
+.inner .ingredient-panel{padding:30px}
+.inner .ingredient-panel h2{font-size:22px;line-height:1.2}
+.inner .ingredient-panel li{font-size:14px;line-height:24px}
+.inner .preparation li{font-size:16px;line-height:26px}
+.inner .preparation h2{font-size:26px}
+.inner .recipe-source,.inner .recipe-note{font-size:12px;line-height:22px}
+.inner .contact-details,.inner .contact-page-form,.inner .partner-box{border-radius:0}
+.inner .contact-form input,.inner .contact-form select,.inner .contact-form textarea{border-radius:0;border:1px solid #a9b99e}
+.inner .faq details{padding:24px 0}.inner .faq summary{font-size:20px;font-weight:500}
+.inner .policy p{font-size:16px;line-height:26px}
+.inner #footer{margin-top:max(5.25vw,40px)}
+@media(max-width:1199px){.inner .quality-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:767px){
+ .btn{font-size:13px;line-height:24px;min-height:58px;padding:17px 22px}.btn.outline{padding:15px 20px}
+ .text-link{font-size:12px;line-height:24px}
+ .inner main h1{font-size:35px;line-height:1.21}.inner main h2{font-size:24px;line-height:1.15}.inner main h3{font-size:20px;line-height:1.2}
+ .inner .editorial-split{grid-template-columns:1fr;gap:30px}.inner .editorial-text{align-self:start}
+ .inner .editorial-image{height:auto;min-height:0;aspect-ratio:3/4}
+ .inner .editorial-text p{font-size:16px;line-height:26px}
+ .inner .metric-strip{grid-template-columns:1fr 1fr;gap:25px}.inner .metric-strip strong{font-size:30px}.inner .metric-strip span{font-size:12px;line-height:20px}
+ .inner .region-layout{grid-template-columns:1fr;gap:30px}
+ .inner .quality-grid{grid-template-columns:1fr;gap:40px}
+ .inner .quality-grid img{aspect-ratio:2/1}.inner .quality-grid p{font-size:16px;line-height:26px}
+ .audit-wide-quality{grid-template-columns:1fr}.audit-wide-copy{padding:30px 6.25vw}.audit-wide-photo{min-height:0;aspect-ratio:4/3}
+ .audit-gallery{grid-auto-columns:82%;gap:20px}
+ .cr-visual:has(img[src*="packages/"]){min-height:0}
+ .inner .category-grid{grid-template-columns:1fr;gap:40px}
+ .inner .category-hero{height:340px}
+ .inner .catalog-grid{grid-template-columns:1fr 1fr;gap:13px}
+ .inner .product-card h3{font-size:16px}.inner .product-card .text-link{font-size:10px;line-height:18px}
+ .inner .catalog-layout{grid-template-columns:1fr;gap:30px}
+ .inner .recipe-heading{margin-top:calc(6.5vw + 19px)}
+ .inner .recipe-detail-layout{grid-template-columns:1fr;gap:40px}.inner .ingredient-panel{position:static}
+ .inner .recipe-actions{align-items:flex-start;flex-direction:column}
+ .inner .feature-panel{grid-template-columns:1fr;gap:30px}
+ .inner .recipe-copy h3{font-size:21px}
+ .inner .contact-layout{grid-template-columns:1fr}
+}
